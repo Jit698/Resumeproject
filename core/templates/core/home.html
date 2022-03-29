@@ -1,0 +1,40 @@
+{% extends 'core/base.html' %} {% load static %} {% block content %}
+<div class="mt-5">
+ <div class="text-center">
+  <img
+  src="{% static '/core/images/woman-2.jpg' %}"
+  alt="profilepic"
+  class="img-thumbnail"
+  width="250px"
+  height="150px"
+/>
+ </div>
+  <div class="text-white mt-5 mx-5 ">
+    <h1 class="font-weight-blod st-font">Hello ,</h1>
+    <div class="px-4" style="line-height :1.5rem;">
+      <p style="text-indent :100px">
+        I am <b class="text-warning">Sonam Gupta</b> having 5 years of
+        full-stack web devlopment experience for global businesses , I offer the
+        technical expertise you are seeking for your web devloper position
+      </p>
+      <p>
+        Since earning my bachelor's degree in intrest and web devlopment from
+        xyz University , I have served as a web devloper at
+        <b class="text-warning">GS Technology </b>,one of biggest premier
+        digital marketing and web devlopment firm . In this postion ,I have led
+        web devlopment projects for clients in diverse indrustries including
+        technology , manufacturing , pharmaceutical ,hospitality reatial and
+        financial services
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium
+        ratione quo cumque itaque nisi consequuntur. Id reiciendis nam ab quos.
+      </p>
+    </div>
+  </div>
+<div class="text-center ">
+  <a href="{% url 'contact' %}" class="btn btn-outline-warning m-4 mr-5">Hire Me</a>
+  <a href="{% url 'contact' %}" class="btn btn-outline-info m-4  ">Contact</a>
+</div>
+</div>
+{% endblock content %}
